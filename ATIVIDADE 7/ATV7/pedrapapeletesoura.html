@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Pedra, Papel, Tesoura</title>
+</head>
+<body>
+    <script>
+
+        var choices = ["Pedra", "Papel", "Tesoura"];
+        var resultPC = Math.floor(Math.random() * 3);
+        var resultR = parseInt(prompt("Faça Sua Escolha: \n 0-Pedra \n 1-Papel \n 2-Tesoura "));
+
+        alert("Escolha do Usuário: " + choices[resultR]);
+        alert("Escolha da Máquina: " + choices[resultPC]);
+
+        if(resultPC == resultR) {
+            alert("EMPATE");
+
+        } else if((resultPC == 0 && resultR == 2) || (resultPC == 1 && resultR == 0) || (resultPC == 2 && resultR == 1)) {
+            alert("Máquina Ganhou");
+        } 
+        
+        else {
+            alert("Usuário Ganhou");
+        }
+
+    </script>
+</body>
+</html>

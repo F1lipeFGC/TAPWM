@@ -1,0 +1,7 @@
+var dentro da funçao local 
+let dentro da funçao local 
+var dentro do bloco global
+let dentro do bloco local 
+
+var s = "fatec"
+var s new string = "fatec" objeto
