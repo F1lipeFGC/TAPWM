@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Triângulo</title>
+</head>
+<body>
+    <script>
+        function verificarTriangulo(A, B, C) {
+            
+            if (isNaN(A) || isNaN(B) || isNaN(C)) {
+                return "Os valores fornecidos não são números.";
+            }
+
+            // Verifica se cada lado é positivo
+            if (A <= 0 || B <= 0 || C <= 0) {
+                return "Os valores dos lados devem ser positivos.";
+            }
+
+            // Verifica se as medidas formam um triângulo
+            if (A + B > C && A + C > B && B + C > A) {
+                // Verifica o tipo de triângulo
+                if (A === B && B === C) {
+                    return "O triângulo é equilátero.";
+                } else if (A === B || A === C || B === C) {
+                    return "O triângulo é isósceles.";
+                } else {
+                    return "O triângulo é escaleno.";
+                }
+            } else {
+                return "Os valores fornecidos não formam um triângulo.";
+            }
+        }
+
+        // Obtém os valores do usuário
+        var A = parseFloat(prompt("Digite o valor do lado A do triângulo:"));
+        var B = parseFloat(prompt("Digite o valor do lado B do triângulo:"));
+        var C = parseFloat(prompt("Digite o valor do lado C do triângulo:"));
+
+        // Chama a função e exibe o resultado
+        var resultado = verificarTriangulo(A, B, C);
+        alert(resultado);
+    </script>
+</body>
+</html>
