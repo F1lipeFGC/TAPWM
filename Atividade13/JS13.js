@@ -8,16 +8,16 @@ function Botao1(){
 
 
 function Botao2(){
-    var aluno2 {};
-    aluno2["Nome"] = "Fernanda";
-    aluno2["RA"] = "1241231243";
-    aluno2["email do aluno"] = "fernanda@gmail.com";    
-    alert("RA=" + aluno2.ra + "Nome=" + aluno2.nome);
-    alert(aluno2["email do aluno"]);
+    var Aluno2 = new Object();;
+    Aluno2["Nome"] = "Fernanda";
+    Aluno2["RA"] = "1241231243";
+    Aluno2["email do aluno"] = "fernanda@gmail.com";    
+    alert("RA=" + Aluno2.RA + "Nome=" + Aluno2.Nome);
+    alert(Aluno2["email do aluno"]);
 }
 
 function Botao3(){
 const arr = [['codigo', 1],['nome','Joao'],['idade',23]];
 const obj = Object.fromEntries(arr);
-alert(JSON.stringify(OBJ));
+alert(JSON.stringify(obj));
 }
