@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS17.js"></script>
+    <link rel="stylesheet" href="CS17.css">
+    <title>ATIVIDADE 17</title>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="inputT">
+                <label>
+                    Digite seu Texto:
+                        <input type="text" id="textInput" oninput="transformText()">
+                </label>
+            </div><p>
+
+           <div class="inputB">   
+            <label> 
+                <input type="checkbox" name="exclusiveCheckbox" onchange="onlyOneCheckbox(this)">
+                MAIUSCULO
+            </label>
+
+            <label>
+                <input type="checkbox" name="exclusiveCheckbox" onchange="onlyOneCheckbox(this)">
+                minusculo
+            </label>
+    
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
