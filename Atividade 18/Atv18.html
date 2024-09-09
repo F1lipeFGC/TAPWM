@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CS18.CSS">
+    <script src="JS18.JS" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form name="nomeform" onsubmit="return validar()">
+            <h1>Formulário</h1>
+            <input type="text" class="input-info" name="nome" placeholder="Nome">
+            <input type="email" class="input-info" name="email" placeholder="Email">
+            <input type="text" class="comentario input-info" name="comentario" placeholder="Comentário" maxlength="20">
+            <div class="pesquisa">
+                <h2>Pesquisa</h2>
+                <p>É a primeira vez que você entra nesta página?</p>
+                <div>
+                    <input type="checkbox" name="pesquisa" value="Sim" id="pesquisaSim">
+                    <label for="pesquisaSim">Sim</label>
+                    <input type="checkbox" name="pesquisa" value="Não" id="pesquisaNao">
+                    <label for="pesquisaNao">Não</label>
+                </div>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
